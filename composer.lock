@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60992e586606c95d5cd13bf1d74d0fd7",
+    "content-hash": "16ccc21d90a3c00f333e070d9f1d2fbb",
     "packages": [
         {
             "name": "brick/math",
@@ -1889,6 +1889,78 @@
                 }
             ],
             "time": "2023-09-16T11:51:32+00:00"
+        },
+        {
+            "name": "livewire/volt",
+            "version": "v1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/volt.git",
+                "reference": "f777801cfdd24b6fa3d4b572413216dfb12d9e2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/volt/zipball/f777801cfdd24b6fa3d4b572413216dfb12d9e2e",
+                "reference": "f777801cfdd24b6fa3d4b572413216dfb12d9e2e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.17|^11.0",
+                "livewire/livewire": "^3.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/folio": "^1.1",
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^8.6.2",
+                "pestphp/pest": "^2.9.5",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Livewire\\Volt\\VoltServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "functions.php"
+                ],
+                "psr-4": {
+                    "Livewire\\Volt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "nuno@laravel.com"
+                }
+            ],
+            "description": "An elegantly crafted functional API for Laravel Livewire.",
+            "homepage": "https://github.com/livewire/volt",
+            "keywords": [
+                "laravel",
+                "livewire",
+                "volt"
+            ],
+            "support": {
+                "issues": "https://github.com/livewire/volt/issues",
+                "source": "https://github.com/livewire/volt"
+            },
+            "time": "2023-09-25T00:46:14+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6154,6 +6226,68 @@
             "time": "2021-10-08T21:21:46+00:00"
         },
         {
+            "name": "laravel/breeze",
+            "version": "v1.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "d3979dc75f78c1c6b0b035f52e3f4ea2dacab615"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/d3979dc75f78c1c6b0b035f52e3f4ea2dacab615",
+                "reference": "d3979dc75f78c1c6b0b035f52e3f4ea2dacab615",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.17",
+                "illuminate/filesystem": "^10.17",
+                "illuminate/support": "^10.17",
+                "illuminate/validation": "^10.17",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2023-09-20T18:37:37+00:00"
+        },
+        {
             "name": "laravel/pint",
             "version": "v1.13.2",
             "source": {
@@ -6757,6 +6891,75 @@
                 }
             ],
             "time": "2023-08-21T16:06:30+00:00"
+        },
+        {
+            "name": "pestphp/pest-plugin-laravel",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest-plugin-laravel.git",
+                "reference": "77a2838c1d3b09d147211e76a48987ba9a758279"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/77a2838c1d3b09d147211e76a48987ba9a758279",
+                "reference": "77a2838c1d3b09d147211e76a48987ba9a758279",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.18.0|^11.0",
+                "pestphp/pest": "^2.13.0",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "laravel/dusk": "^7.9.3",
+                "orchestra/testbench": "^8.6.3",
+                "pestphp/pest-dev-tools": "^2.14.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pest\\Laravel\\PestServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Autoload.php"
+                ],
+                "psr-4": {
+                    "Pest\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The Pest Laravel Plugin",
+            "keywords": [
+                "framework",
+                "laravel",
+                "pest",
+                "php",
+                "test",
+                "testing",
+                "unit"
+            ],
+            "support": {
+                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v2.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/paypalme/enunomaduro",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-10T15:37:09+00:00"
         },
         {
             "name": "phar-io/manifest",
