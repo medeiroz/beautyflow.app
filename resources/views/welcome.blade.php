@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon"/>
 
+        <link rel="icon" href="{{ asset('favicon.png') }}" type="image/x-icon"/>
         <title>{{ $title ?? config('app.name') }}</title>
 
         <!-- Fonts -->
@@ -22,7 +22,9 @@
 
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <div class="h-48">
+                        <x-application-logo />
+                    </div>
                 </div>
 
                 <div class="mt-16">

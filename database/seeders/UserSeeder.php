@@ -18,6 +18,7 @@ class UserSeeder extends Seeder
         User::factory()->create([
             'name' => 'Flavio Medeiros',
             'email' => 'smedeiros.flavio@gmail.com',
+            'cpf' => '12345678909',
         ]);
 
         User::factory(10)->create();

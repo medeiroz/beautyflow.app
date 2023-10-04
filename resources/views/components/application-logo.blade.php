@@ -1,1 +1,1 @@
-<img class="h-24 w-auto bg-gray-100" src="{{ asset('logo.png') }}" alt="Logo Beauty Flow"/>
+<img class="h-auto max-h-full w-auto" src="{{ asset('logo.png') }}" alt="Logo Beauty Flow"/>

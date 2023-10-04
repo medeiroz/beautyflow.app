@@ -12,6 +12,7 @@ new #[Layout('layouts.guest')] class extends Component
 {
     public string $name = '';
     public string $email = '';
+    public string $cpf = '';
     public string $password = '';
     public string $password_confirmation = '';
 
@@ -19,7 +20,8 @@ new #[Layout('layouts.guest')] class extends Component
     {
         $validated = $this->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
+            'email' => ['required', 'string', 'email:rfc,dns', 'max:255', 'unique:'.User::class],
+            'cpf' => ['required', 'string', 'cpf', 'max:11', 'unique:'.User::class],
             'password' => ['required', 'string', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -47,6 +49,13 @@ new #[Layout('layouts.guest')] class extends Component
             <x-input-label for="email" value="Email" />
             <x-text-input wire:model="email" id="email" class="block mt-1 w-full" type="email" name="email" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        </div>
+
+        <!-- CPF -->
+        <div class="mt-4">
+            <x-input-label for="cpf" value="CPF" />
+            <x-text-input wire:model="cpf" id="cpf" class="block mt-1 w-full" type="tel" name="cpf" required autocomplete="username" />
+            <x-input-error :messages="$errors->get('cpf')" class="mt-2" />
         </div>
 
         <!-- Password -->
