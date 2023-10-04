@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "16ccc21d90a3c00f333e070d9f1d2fbb",
+    "content-hash": "ca66e71c162d88fde7328151a1203023",
     "packages": [
         {
             "name": "brick/math",
@@ -3250,6 +3250,60 @@
                 }
             ],
             "time": "2023-04-15T23:01:58+00:00"
+        },
+        {
+            "name": "ranium/laravel-seedonce",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ranium/laravel-seedonce.git",
+                "reference": "b79ca0a89164a5dd460cbccb91240c6f39bd1e28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ranium/laravel-seedonce/zipball/b79ca0a89164a5dd460cbccb91240c6f39bd1e28",
+                "reference": "b79ca0a89164a5dd460cbccb91240c6f39bd1e28",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0|^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ranium\\SeedOnce\\SeedOnceServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ranium\\SeedOnce\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abbas Ali",
+                    "email": "abbas@ranium.in",
+                    "homepage": "https://ranium.in",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel package to run seeders only once",
+            "support": {
+                "issues": "https://github.com/ranium/laravel-seedonce/issues",
+                "source": "https://github.com/ranium/laravel-seedonce/tree/v1.5.0"
+            },
+            "time": "2023-05-31T10:35:17+00:00"
         },
         {
             "name": "symfony/console",
