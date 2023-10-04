@@ -54,9 +54,7 @@ new #[Layout('layouts.guest')] class extends Component
         </div>
 
         <div class="flex justify-end mt-4">
-            <x-primary-button>
-                {{ __('Confirm') }}
-            </x-primary-button>
+            <x-button primary :label="__('Confirm')" type="submit"/>
         </div>
     </form>
 </div>
