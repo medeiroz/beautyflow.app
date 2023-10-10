@@ -20,7 +20,7 @@ yarn-error.log
 _ide_helper.php
 .phpstorm.meta.php
 
-/docker/local/nginx/logs/*.log
-/docker/local/nginx/logs/*.log~
-/docker/production/nginx/logs/*.log
-/docker/production/nginx/logs/*.log~
+/.docker/local/nginx/logs/*
+!/.docker/local/nginx/logs/.gitkeep
+/.docker/production/nginx/logs/*
+!/.docker/production/nginx/logs/.gitkeep
