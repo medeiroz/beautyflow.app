@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c99b1b778552cc493d4427fdab53e60",
+    "content-hash": "f60109db21277f182243670d75078867",
     "packages": [
         {
             "name": "brick/math",
@@ -5608,6 +5608,67 @@
             "time": "2023-09-12T10:11:35+00:00"
         },
         {
+            "name": "tallstackui/tallstackui",
+            "version": "v0.4.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tallstackui/tallstackui.git",
+                "reference": "36aca0e65090ce6891c3e26801459621d53bfa70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tallstackui/tallstackui/zipball/36aca0e65090ce6891c3e26801459621d53bfa70",
+                "reference": "36aca0e65090ce6891c3e26801459621d53bfa70",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.0",
+                "livewire/livewire": "^3.0",
+                "php": "^8.1|^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^8.12",
+                "orchestra/testbench-dusk": "^8.12",
+                "pestphp/pest": "^2.17",
+                "pestphp/pest-plugin-type-coverage": "^2.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TallStackUi\\TallStackUiServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "TallStackUi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AJ Meireles",
+                    "email": "alvaro.meireles@live.com"
+                }
+            ],
+            "description": "A curated list of TallStack UI Components",
+            "support": {
+                "issues": "https://github.com/tallstackui/tallstackui/issues",
+                "source": "https://github.com/tallstackui/tallstackui/tree/v0.4.9"
+            },
+            "time": "2023-10-13T04:48:30+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.6",
             "source": {
@@ -5875,79 +5936,6 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
-        },
-        {
-            "name": "wireui/wireui",
-            "version": "v1.18.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wireui/wireui.git",
-                "reference": "795cfa6058ea517b0f87ab15e2ef5bbc093e5e51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wireui/wireui/zipball/795cfa6058ea517b0f87ab15e2ef5bbc093e5e51",
-                "reference": "795cfa6058ea517b0f87ab15e2ef5bbc093e5e51",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "10.*",
-                "livewire/livewire": "^3.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.9",
-                "mockery/mockery": "^1.5",
-                "orchestra/testbench": "^8.0",
-                "orchestra/testbench-dusk": "^8.0",
-                "pestphp/pest": "^1.21",
-                "pestphp/pest-plugin-mock": "^1.0",
-                "phpunit/phpunit": "^9.5",
-                "psy/psysh": "@stable"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "WireUi\\Providers\\WireUiServiceProvider"
-                    ],
-                    "aliases": []
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "WireUi\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pedro Oliveira",
-                    "email": "pedrolivertwd@gmail.com"
-                }
-            ],
-            "description": "TallStack components",
-            "keywords": [
-                "blade components",
-                "laravel components",
-                "livewire components",
-                "livewire-ui",
-                "wireui"
-            ],
-            "support": {
-                "issues": "https://github.com/wireui/wireui/issues",
-                "source": "https://github.com/wireui/wireui/tree/v1.18.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/PH7-Jack",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-09-07T02:34:30+00:00"
         }
     ],
     "packages-dev": [

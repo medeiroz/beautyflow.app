@@ -105,7 +105,9 @@ new #[Layout('layouts.guest')] class extends Component
                 Lembrar minha senha
             </a>
 
-            <x-button primary label="Entrar" type="submit"/>
+            <x-button color="primary" type="submit">
+                Entrar
+            </x-button>
         </div>
     </form>
 </div>

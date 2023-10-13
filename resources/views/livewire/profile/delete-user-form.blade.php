@@ -8,8 +8,6 @@ new class extends Component
     #[Rule(['required', 'string', 'current_password'])]
     public string $password = '';
 
-    public bool $deleteUserModal = false;
-
     public function deleteUser(): void
     {
         $this->validate();
@@ -34,11 +32,11 @@ new class extends Component
         </p>
     </header>
 
-    <x-button negative wire:click="deleteUserModal = true">
+    <x-button color="secondary" x-on:click="$modalOpen('modal-confirme-delete')">
         {{ __('Delete Account') }}
     </x-button>
 
-    <x-modal title="Confirmação" blur wire:model.defer="deleteUserModal" focusable>
+    <x-modal title="Confirmação" id="modal-confirme-delete" blur>
         <form wire:submit="deleteUser">
             <x-card>
                 <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
@@ -50,24 +48,21 @@ new class extends Component
                 </p>
 
                 <div class="mt-6">
-                    <x-input-label for="password" value="{{ __('Password') }}" class="sr-only" />
+                    <label>{{ __('Password') }}</label>
 
-                    <x-text-input
+                    <x-password
                         wire:model="password"
                         id="password"
                         name="password"
-                        type="password"
                         class="mt-1 block w-3/4"
                         placeholder="{{ __('Password') }}"
                     />
-
-                    <x-input-error :messages="$errors->get('password')" class="mt-2" />
                 </div>
 
                 <x-slot name="footer">
                     <div class="flex justify-end gap-x-4">
-                        <x-button flat label="Cancelar" x-on:click="close" />
-                        <x-button type="submit" primary label="Confirmar"/>
+                        <x-button flat x-on:click="close">Cancelar</x-button>
+                        <x-button type="submit" color="primary">Confirmar</x-button>
                     </div>
                 </x-slot>
             </x-card>

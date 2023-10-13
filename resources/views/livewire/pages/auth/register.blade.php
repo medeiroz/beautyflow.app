@@ -86,7 +86,9 @@ new #[Layout('layouts.guest')] class extends Component
                 Você já tem uma conta?
             </a>
 
-            <x-button primary label="Registrar" type="submit"/>
+            <x-button color="primary"type="submit">
+                Registrar
+            </x-button>
         </div>
     </form>
 </div>

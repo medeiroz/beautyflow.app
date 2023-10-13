@@ -90,7 +90,9 @@ new #[Layout('layouts.guest')] class extends Component
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-button primary :label="__('Reset Password')" type="submit"/>
+            <x-button color="primary" type="submit">
+                {{ __('Reset Password') }}
+            </x-button>
         </div>
     </form>
 </div>
